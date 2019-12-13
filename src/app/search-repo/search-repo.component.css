@@ -1,0 +1,11 @@
+.container {
+    align-content: center;
+}
+
+#button{
+    margin-bottom: 10px;
+}
+
+#label{
+    text-align: left;
+}
