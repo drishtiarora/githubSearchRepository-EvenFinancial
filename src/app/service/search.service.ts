@@ -6,12 +6,20 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SearchService {
-
-  url = 'https://api.github.com/search/repositories?q=drishti+fork:true';
+  text;
+  stars;
+  license;
+  fork;
+  url;
 
   constructor(private http: HttpClient) { }
 
-  getSearchResults(): Observable<any> {
+  getSearchResults(formData): Observable<any> {
+    this.text = formData.text;
+    this.stars = formData.stars;
+    this.license = formData.license;
+    this.fork = formData.forked;
+    this.url = `https://api.github.com/search/repositories?q=${this.text}+license:${this.license}+stars:${this.stars}+fork:${this.fork}`;
     return this.http.get(this.url);
   }
 }
