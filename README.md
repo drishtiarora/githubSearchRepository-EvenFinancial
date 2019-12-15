@@ -1,10 +1,17 @@
 # GithubRepoSearch
 
 1. How to run the application
-   Run `npm install`, open the project in the editor and run `ng serve --port portNumber`.
+   1) Install the dependencies
+        run `npm install`
+
+   2) Run the application on any port number, port number-4200
+       run `ng serve --port 4200`.
+
+   3) Open the browser and search for:
+      `localhost:4200` 
 
 2. About the Application
-   It is an Github Search Repository application which performs search functionality on the basis of data requested by the user. The user fills out a form which takes the following fields:
+   It is a Github Search Repository application which performs search functionality on the basis of data requested by the user. The user fills out a form which takes the following fields:
    a) Text- an input field
    b) Stars- an input field which only takes digits, range(10..30), >=number
    c) License- is a dropdown
