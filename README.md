@@ -1,5 +1,19 @@
 # GithubRepoSearch
 
+1. How to run the application
+   Run `npm install`, open the project in the editor and run `ng serve --port portNumber`.
+
+2. About the Application
+   It is an Github Search Repository application which performs search functionality on the basis of data requested by the user. The user fills out a form which takes the following fields:
+   a) Text- an input field
+   b) Stars- an input field which only takes digits, range(10..30), >=number
+   c) License- is a dropdown
+   d) Forked- a checkbox 
+
+   Based on the requested data, it creates a url, passes the form value in the url on url creation and fetches the Search Results and displays on the UI.
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
 ## Development server
